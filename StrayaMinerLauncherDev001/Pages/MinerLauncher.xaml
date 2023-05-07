@@ -1,0 +1,37 @@
+﻿<Page x:Class="StrayaMinerLauncherDev001.Pages.MinerLauncher"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StrayaMinerLauncherDev001.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="539" d:DesignWidth="780"
+      Title="MinerLauncher">
+
+    <Grid>
+        <Button x:Name="btnStartMiners" Content="Start Miners" HorizontalAlignment="Left" Margin="3,10,0,0" VerticalAlignment="Top" Width="92" Height="30" Background="#FF232323" BorderBrush="#FFC8C8C8" Foreground="#FFC8C8C8"/>
+        <Button x:Name="btnStopMiners" Content="Stop Miners" HorizontalAlignment="Left" Margin="685,10,0,0" VerticalAlignment="Top" Width="92" Height="30" Background="#FF232323" BorderBrush="#FFC8C8C8" Foreground="#FFC8C8C8"/>
+        <Label x:Name="lblNetworkStatusHeading" Content="Network Status:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="130" Foreground="#FFC8C8C8" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="20,64,0,0" FontWeight="Bold"/>
+        <Label x:Name="lblNetworkStatusResult" Content="Offline" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="120" Foreground="#FFC80000" VerticalContentAlignment="Center" Margin="155,64,0,0"/>
+        <Label x:Name="lblNetworkNameHeading" Content="Network Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="130" Foreground="#FFC8C8C8" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="20,119,0,0" FontWeight="Bold"/>
+        <Label x:Name="lblNetworkNameResult" Content="Unavailable" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="120" Foreground="#FFC80000" VerticalContentAlignment="Center" Margin="155,119,0,0"/>
+        <Label x:Name="lblNetworkConnectedNodesHeading" Content="No. Connected Nodes:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="140" Foreground="#FFC8C8C8" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="10,174,0,0" FontWeight="Bold"/>
+        <Label x:Name="lblNetworkConnectedNodesResult" Content="--" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="120" Foreground="#FFC8C8C8" VerticalContentAlignment="Center" Margin="155,174,0,0"/>
+        <Label x:Name="lblNetworkHashrateHeading" Content="Network Hashrate:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="120" Foreground="#FFC8C8C8" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="294,64,0,0" FontWeight="Bold"/>
+        <Label x:Name="lblNetworkHashrateResult" Content="--" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="120" Foreground="#FFC8C8C8" VerticalContentAlignment="Center" Margin="419,64,0,0"/>
+        <Label x:Name="lblNetworkDifficultyHeading" Content="Network Difficulty:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="120" Foreground="#FFC8C8C8" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="294,119,0,0" FontWeight="Bold"/>
+        <Label x:Name="lblNetworkDifficultyResult" Content="--" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="120" Foreground="#FFC8C8C8" VerticalContentAlignment="Center" Margin="419,119,0,0"/>
+        <Label x:Name="lblNetworkFeeHeading" Content="Transaction Fee:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="130" Foreground="#FFC8C8C8" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="284,174,0,0" FontWeight="Bold"/>
+        <Label x:Name="lblNetworkFeeResult" Content="--" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="120" Foreground="#FFC8C8C8" VerticalContentAlignment="Center" Margin="419,174,0,0"/>
+        <Label x:Name="lblNetworkChainHeading" Content="Blocks Mined (Session)" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="141" Foreground="#FFC8C8C8" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="499,64,0,0" FontWeight="Bold"/>
+        <Label x:Name="lblNetworkChainResult" Content="Unknown" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="110" Foreground="#FFC8C8C8" VerticalContentAlignment="Center" Margin="645,64,0,0"/>
+        <Label x:Name="lblMiningStatusHeading" Content="Mining Status" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="110" Foreground="#FFC8C8C8" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="530,119,0,0" FontWeight="Bold"/>
+        <Label x:Name="lblMiningStatusResult" Content="Not Mining" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="110" Foreground="#FFC8C8C8" VerticalContentAlignment="Center" Margin="645,119,0,0"/>
+        <Label x:Name="lblSessionTimeHeading" Content="Session Time" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="119" Foreground="#FFC8C8C8" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="521,174,0,0" FontWeight="Bold"/>
+        <Label x:Name="lblSessionTimeResult" Content="00:00" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="110" Foreground="#FFC8C8C8" VerticalContentAlignment="Center" Margin="645,174,0,0"/>
+        <TextBlock x:Name="tblockMinerOutput" HorizontalAlignment="Center" Height="245" Margin="0,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="760" Foreground="#FFC8C8C8"/>
+        <Button x:Name="btnStartMiners_Copy" Content="Miner Output" HorizontalAlignment="Left" Margin="10,249,0,0" VerticalAlignment="Top" Width="110" Height="30" Background="#FF232323" BorderBrush="#FFC8C8C8" Foreground="#FFC8C8C8"/>
+        <Button x:Name="btnStartMiners_Copy1" Content="Hashrate Chart" HorizontalAlignment="Left" Margin="125,249,0,0" VerticalAlignment="Top" Width="110" Height="30" Background="#FF232323" BorderBrush="#FFC8C8C8" Foreground="#FFC8C8C8"/>
+        <Button x:Name="btnStartMiners_Copy2" Content="Difficulty Chart" HorizontalAlignment="Left" Margin="240,249,0,0" VerticalAlignment="Top" Width="110" Height="30" Background="#FF232323" BorderBrush="#FFC8C8C8" Foreground="#FFC8C8C8"/>
+    </Grid>
+</Page>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="StrayaMinerLauncherDev001.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StrayaMinerLauncherDev001"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="610" Width="800" Background="#FF232323">
+    <Grid>
+        <Button x:Name="btnInfoLinks" Content="Info &amp; Links" HorizontalAlignment="Left" Margin="3,10,0,0" VerticalAlignment="Top" Width="120" Height="30" Background="#FF232323" Foreground="#FFC8C8C8"/>
+        <Button x:Name="btnMinerLauncher" Content="Miner Launcher" HorizontalAlignment="Left" Margin="128,10,0,0" VerticalAlignment="Top" Width="120" Height="30" Background="#FF232323" Foreground="#FFC8C8C8" Click="btnMinerLauncher_Click"/>
+        <Button x:Name="btnSettings" Content="Settings" HorizontalAlignment="Right" Margin="0,10,3,0" VerticalAlignment="Top" Width="120" Height="30" Background="#FF232323" Foreground="#FFC8C8C8" Click="btnSettings_Click"/>
+        <Frame x:Name="frameMain" Content="" HorizontalAlignment="Center" Height="549" Margin="0,45,0,0" VerticalAlignment="Top" Width="780" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
